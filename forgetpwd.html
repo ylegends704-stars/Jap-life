@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgot Password - Japan Life Guide</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+
+<div class="background"></div>
+
+<div class="login-container">
+
+    <div class="logo">
+        🔑
+    </div>
+
+    <h1>Reset Password</h1>
+
+    <p class="subtitle">
+        Enter the email address associated with your account.
+    </p>
+
+    <form id="resetForm">
+
+        <div class="input-group">
+            <label>Email Address</label>
+            <input
+                type="email"
+                id="resetEmail"
+                placeholder="example@email.com"
+                required>
+        </div>
+
+        <button type="submit" class="login-btn">
+            Send Reset Link
+        </button>
+
+    </form>
+
+    <p id="resetMessage"></p>
+
+    <div class="divider">
+        <span>OR</span>
+    </div>
+
+    <button
+        class="signup-btn"
+        onclick="location.href='loginpage.html'">
+        Back to Login
+    </button>
+
+</div>
+
+<script src="../js/forgetpwd.js"></script>
+
+</body>
+</html>

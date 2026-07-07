@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WELCOME TO JAPAN</title>
+
+    <link rel="stylesheet" href="../css/login.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="sakura-container">
+      <span>🌸</span>
+      <span>🌸</span>
+      <span>🌸</span>
+      <span>🌸</span>
+      <span>🌸</span>
+      <span>🌸</span>
+      <span>🌸</span>
+      <span>🌸</span>
+    </div>
+
+    <div class="background"></div>
+
+    <div class="login-container">
+      <img src="../img/Japan.png" width="100px">
+      <h1 id="title">Japan Life Guide</h1>
+
+      <p class="subtitle" id="subtitle">Start your life in Japan smoothly!!</p>
+
+      <form id="loginForm">
+        <div class="input-group">
+          <label id="emailLabel">Email</label>
+          <input
+            type="email"
+            placeholder="example@email.com"
+            id="email"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label id="passwordLabel">Password</label>
+          <input
+            type="password"
+            placeholder="********"
+            id="password"
+            required
+          />
+        </div>
+
+        <button type="submit" class="login-btn" id="loginBtn">Log In</button>
+      </form>
+
+      <p id="message"></p>
+      <div class="extra-links">
+        <a href="forgetpwd.html" id="forgotLink">Forgot Password?</a>
+      </div>
+
+      <div class="divider">
+        <span>OR</span>
+      </div>
+
+      <button
+        class="signup-btn"
+        id="createBtn"
+        onclick="location.href = 'createacc.html'"
+      >
+        Create Account
+      </button>
+
+      <button class="lang-btn" onclick="changeLanguage('jp')">🇯🇵 日本語</button>
+
+      <button class="lang-btn" onclick="changeLanguage('en')">
+        🇺🇸 English
+      </button>
+
+      <button class="lang-btn" onclick="changeLanguage('mm')">🇲🇲 မြန်မာ</button>
+    </div>
+
+    <footer>
+      <!-- Bottom Navigation -->
+      <nav class="bottom-nav">
+        <a href="travelvisa.html" class="nav-item">
+          ✈️
+          <span>旅行</span>
+        </a>
+
+        <a href="studentvisa.html" class="nav-item">
+          🎓
+          <span>留学</span>
+        </a>
+
+        <a href="workvisa.html" class="nav-item">
+          💼
+          <span>就労</span>
+        </a>
+
+        <a href="familyvisa.html" class="nav-item">
+          👨‍👩‍👧
+          <span>家族</span>
+        </a>
+      </nav>
+    </footer>
+    <script src="../js/loginpage.js"></script>
+  </body>
+</html>
